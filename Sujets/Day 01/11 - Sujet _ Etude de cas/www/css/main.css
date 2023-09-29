@@ -1,0 +1,88 @@
+html {
+  background: url('../img/congruent_pentagon.png');
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+article {
+  float: left;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  min-height: 256px;
+}
+article.col1 { width: 256px; }
+article.col2 { width: 512px; }
+
+article a:link,
+article a:visited {
+  color: orange;
+}
+
+article > .content {
+  padding: 2rem;
+}
+article h1:first-child {
+  margin-top: 0;
+}
+
+.member-unit {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: rgba(62, 120, 66, 0.7);
+  opacity: 0;
+  transition: opacity 600ms;
+}
+.member-unit:hover {
+  opacity: 1;
+  transition: opacity 600ms;
+}
+.member-unit > h1 {
+  margin: 0;
+  font-family: Georgia, serif;
+}
+.member-unit > h1 > small {
+  font-size: 1rem;
+  font-weight: normal;
+}
+.member-unit > p {
+  margin: 0;
+  font-size: 0.8125rem;
+}
+.member-unit .socials a {
+  margin-top: .4rem;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border-radius: 50%;
+  text-indent: -9999px;
+}
+.member-photo {
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#join {
+  background-color: rgb(32, 61, 34);
+}
