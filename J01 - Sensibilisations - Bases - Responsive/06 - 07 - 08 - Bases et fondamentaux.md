@@ -395,3 +395,39 @@ Les pistes texte utilisées avec cet élément sont formatées selon [le format 
   <track default kind="captions" srclang="en" src="/subtitles.vtt">
 </video>
 ```
+
+Bien sûr, voici des explications pour les balises `<bdo>` et `<q>`.
+
+---
+
+### `<bdo>`
+
+https://developer.mozilla.org/fr/docs/Web/HTML/Element/bdo
+
+L'élément HTML `<bdo>` (bi-directionnal override) est utilisé pour surcharger la directionnalité du texte bidirectionnel. C'est particulièrement utile lors de l'écriture de texte dans des langues qui se lisent de droite à gauche (comme l'arabe ou l'hébreu) au sein d'un document qui est principalement écrit dans une langue qui se lit de gauche à droite.
+
+Pour utiliser `<bdo>`, il suffit de définir l'attribut `dir` avec les valeurs `ltr` (left-to-right, de gauche à droite) ou `rtl` (right-to-left, de droite à gauche).
+
+```html
+<bdo dir="rtl">
+    Cela écrira le texte de droite à gauche.
+</bdo>
+```
+
+Différence entre `<bdo>` et `<bdi>`:
+- `<bdo>` : force la direction du texte et ignore le contexte environnant.
+- `<bdi>` : isole le texte et laisse le navigateur déterminer automatiquement sa direction en fonction du contexte environnant.
+
+---
+
+### `<q>`
+
+https://developer.mozilla.org/fr/docs/Web/HTML/Element/q
+
+L'élément HTML `<q>` est utilisé pour définir une courte citation inline. Les navigateurs web entourent généralement le contenu de l'élément `<q>` avec des guillemets (anglais) ou des guillemets français.
+
+```html
+<p>La citation suivante est de Vermouth (Detective Conan) : <q>Vous n'avez pas besoin de deux Silver Bullet ... une seule suffira.</q></p>
+```
+
+Dans l'exemple ci-dessus, le texte entre les balises `<q>` est considéré comme une citation et sera automatiquement entouré de guillemets par la plupart des navigateurs web.
