@@ -46,7 +46,7 @@ Il existe plusieurs solutions pour créer des bannières de cookies conformes au
 - **[Popup Cookie Creator](https://cookieconsent.popupsmart.com/)**
 - **[Cookiebot](https://www.cookiebot.com/fr/)**
 - **[Iubenda](https://www.iubenda.com/fr/)**
-- **[Axeptio](https://www.axeptio.com/fr/)**
+- **[Axeptio](https://www.axept.io/fr/)**
 - **[Cookie consent](https://www.osano.com/cookieconsent)**
 - **[Onetrust](https://www.onetrust.com/products/cookies)**
 - **[Didomi](https://www.didomi.io/fr/)** 
