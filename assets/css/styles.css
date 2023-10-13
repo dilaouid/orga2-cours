@@ -1,0 +1,151 @@
+body {
+    background-color: black;
+    user-select: none;
+}
+
+p {
+    color: white;
+    font-family: 'Igiari';
+    font-size: 8px;
+    position: absolute;
+    z-index: 2;
+}
+
+img {
+    position: absolute;
+    user-select: none;
+    /* ignore select move image on page */
+
+    -webkit-user-drag: none;
+    /* ignore drag image on page */
+
+    -webkit-touch-callout: none;
+    /* ignore callout image on page */
+
+    -webkit-user-select: none;
+    /* ignore select image on page */
+
+    -moz-user-select: none;
+    /* ignore select image on page */
+
+    -ms-user-select: none;
+    /* ignore select image on page */
+}
+
+.d-none {
+    display: none;
+}
+
+.pressBtn {
+    transform: scale(.8);
+    transition: .05s ease-in-out;
+    cursor: default !important;
+}
+
+/* UI elements CSS */
+
+#nextbox {
+    cursor: pointer;
+}
+
+#bg {
+    overflow-x: hidden;
+    max-width: 256px;
+}
+
+#next_button {
+    margin-top: 234px;
+    margin-left: 18px;
+    opacity: .8;
+}
+
+#bg_bottom {
+    margin-top: 192px;
+}
+
+#window_message {
+    margin-top: 123px;
+}
+
+#window_name {
+    margin-top: 113px;
+}
+
+#name {
+    margin-top: 115px;
+    margin-left: 10px;
+}
+
+#dialog {
+    margin-top: 130px;
+    margin-left: 10px;
+    max-width: 240px;
+    font-size: 13px;
+    font-weight: thin;
+}
+
+/* Text color CSS */
+
+.red {
+    color: #e16935;
+}
+
+.blue {
+    color: #4291c9
+}
+
+.green {
+    color: #00B050;
+}
+
+
+/* Animation related CSS */
+
+.alert {
+    animation: flashBrightness 0.5s;
+}
+
+.shake {
+    animation: shake 0.3s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+#arrow {
+    animation: arrow .5s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    margin-top: 275px;
+    margin-left: 110px;
+}
+
+@keyframes flashBrightness {
+    0% { filter: brightness(5); }
+    100% { filter: brightness(1); }
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-2px, 0, 0);
+    }
+    
+    20%, 80% {
+        transform: translate3d(4px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(-6px, 0, 0);
+    }
+
+    40%, 60% {
+        transform: translate3d(6px, 0, 0);
+    }
+}
+
+@keyframes arrow {
+    from {
+        margin-left: 110px;
+    }
+
+    to {
+        margin-left: 120px;
+    }
+}

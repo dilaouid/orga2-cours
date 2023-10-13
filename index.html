@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ace Attorney Web</title>
+    <link rel="stylesheet" href="assets/fonts/webfont.css">
+    <link rel=stylesheet href="assets/css/styles.css">
+</head>
+
+<body oncontextmenu="return false;">
+
+    <!-- L'écran supérieur -->
+    <div id="top_screen">
+        <!-- Les éléments textuels du jeu (nom, et le message) -->
+        <div id="textbox">
+            <p id="name"></p>
+            <p id="dialog"></p>
+        </div>
+
+        <!-- Personnage & arrière plan -->
+        <div id="characterbox">
+            <img src="assets/img/bg/office.jpg" alt="background image office" id="bg">
+            <img src="assets/img/sprites/tektiv/silent/normal.gif" alt="character" id="character">
+        </div>
+
+        <!-- Fenêtres pour nom & message -->
+        <div id="dialogbox">
+            <img src="assets/img/ui/name_box.png" alt="name box" id="window_name" class="d-none">
+            <img src="assets/img/ui/dialog_box.png" alt="dialog box" id="window_message" class="d-none">
+        </div>
+    </div>
+
+    <!-- L'écran inférieur -->
+    <div id="bottom_screen">
+        <!-- L'arrière plan de l'écran inférieur -->
+        <img src="assets/img/ui/bg_bottom.jpg" alt="background image bottom" id="bg_bottom">
+
+            
+        <!-- Bouton message suivant -->
+        <div id="nextbox">
+            <img src="assets/img/ui/default_button.png" alt="Next Button" id="next_button">
+            <img src="assets/img/ui/arrow.png" alt="next button arrow" id="arrow">
+        </div>
+    </div>
+
+    <script src="assets/js/script.js" type="text/javascript"></script>
+</body>
+</html>
